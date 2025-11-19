@@ -1,0 +1,12 @@
+version: 2
+sources:
+    - name: datafeed_shared_schema
+      database: RAW
+      schema: BKSVC
+      tables:
+        - name: LC_LOAN
+        - name: RAW_CLIENT
+        - name: RAW_DATE
+        - name: LCI80_LOAN
+        - name: KAPITUS_LOAN
+        - name: KAPITUS_FORBRIGHT
