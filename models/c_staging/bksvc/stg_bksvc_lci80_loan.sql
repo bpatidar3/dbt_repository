@@ -5,9 +5,9 @@ select
         investor_code = 'investor_code',
         contract_type = 'null',
         type_lease_loan = 'Loan',
-        _etl_loaded_at = 'etl_load_date',
+        _etl_loaded_at = '_etl_loaded_at',
         client_id = 'orion_client_id',
-        vendor_code = "'LIGT_ATLAS'") 
+        vendor_code = "'LIGT_I80'") 
     }}
     --investor_code::varchar(50)     vendor_code,
     --dates----------------------
@@ -58,5 +58,5 @@ select
     customer_routing_num::varchar(100)          customer_routing_num,
     customer_bank_acct_num::varchar(100)        customer_bank_acct_num,
     customer_bank_acct_type_code::varchar(10)   customer_bank_acct_type_code,
-    etl_load_date
-from {{ source('datafeed_shared_schema', 'LC_LOAN') }}
+    _etl_loaded_at
+from {{ source('datafeed_shared_schema', 'LCI80_LOAN') }}

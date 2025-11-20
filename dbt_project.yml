@@ -49,4 +49,10 @@ models:
   tsf_backup_servicing:
    +tags: 'bksvc'
    +pre-hook: ["{% if is_incremental() %} DELETE FROM {{ this }} WHERE as_of_date = dateadd(day, -1, current_date()){% endif %}"]
+
+  example:
+   +materialized: table
+
+  staging:
+   +materialized: table
     

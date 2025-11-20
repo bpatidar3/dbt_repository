@@ -8,5 +8,8 @@ sources:
         - name: RAW_CLIENT
         - name: RAW_DATE
         - name: LCI80_LOAN
-        - name: KAPITUS_LOAN
+        - name: KAPITUS_LOANS
+        - name: STG_CUSTOMER_DATA
         - name: KAPITUS_FORBRIGHT
+        - name: STG_ORDER
+        - name: STG_PAYMENTS

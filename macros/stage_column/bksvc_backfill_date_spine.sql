@@ -43,12 +43,12 @@ select
     max_imported_at,
     sysdate() as _row_inserted_at
 
-  from {{ ref('dwd_date') }}
+  from RAW.BKSVC.dwd_date
     join cte_contracts 
         on cte_contracts.max_imported_at_by_month = cte_contracts.imported_at
         and dwd_date.last_day_of_month = cte_contracts.as_of_date
     
-    left join {{ ref('dwd_client') }} client on cte_contracts.client_id = client.client_id
+    left join RAW.BKSVC.dwd_client client on cte_contracts.client_id = client.client_id
          
   where
     dwd_date.date_Actual between  min_as_of_date and dateadd(day, -1, current_date())
@@ -61,4 +61,4 @@ select
         {% endif %}
         )
   {% endif %}  
-{%- endmacro -%}
+{%- endmacro -%} 
