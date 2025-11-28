@@ -11,3 +11,6 @@ sources:
         - name: STG_SUPPLIERS
         - name: STG_STORES_DATA
         - name: STG_ITEMS_DATA
+        - name: STG_CUST_INFO
+        - name: CUST_INFO_MERGE
+        - name: EMP
