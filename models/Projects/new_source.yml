@@ -1,0 +1,16 @@
+version: 2
+sources:
+    - name: datafeed_shared_schema1
+      database: DBT_DB
+      schema: STAGING_LAYER
+      tables:
+        - name: STG_CUSTOMER_DATA
+        - name: STG_ORDER
+        - name: STG_PAYMENTS
+        - name: STG_PRODUCT_DATA
+        - name: STG_SUPPLIERS
+        - name: STG_STORES_DATA
+        - name: STG_ITEMS_DATA
+        - name: STG_CUST_INFO
+        - name: CUST_INFO_MERGE
+        - name: EMP

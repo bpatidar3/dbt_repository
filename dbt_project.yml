@@ -53,6 +53,6 @@ models:
   example:
    +materialized: table
 
-  staging:
+  Projects:
    +materialized: table
     
