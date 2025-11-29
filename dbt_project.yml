@@ -55,4 +55,8 @@ models:
 
   Projects:
    +materialized: table
+   
+  snapshots:
+  +target_schema: snapshots    
+ 
     
