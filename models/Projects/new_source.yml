@@ -14,3 +14,5 @@ sources:
         - name: STG_CUST_INFO
         - name: CUST_INFO_MERGE
         - name: EMP
+        - name: customers 
+         
